@@ -65,8 +65,21 @@ export function Footer() {
           </div>
 
           {/* Copyright */}
-          <p className="text-xs text-muted">
+          <p className="text-xs text-muted mb-2">
             © {currentYear} Rebel Barber. Alle rettigheter reservert.
+          </p>
+          
+          {/* Credit */}
+          <p className="text-xs text-muted/60">
+            Nettsiden er laget av{" "}
+            <a
+              href="https://didriksson.no"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gold transition-colors"
+            >
+              Didriksson Digital
+            </a>
           </p>
         </div>
       </div>
