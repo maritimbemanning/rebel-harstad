@@ -23,7 +23,7 @@ const team = [
     name: "Tommy Meistad",
     role: "Grunnlegger & Master Barber",
     bio: "Tommy startet sin reise som barber for over 15 år siden. Med en lidenskap for tradisjonelt håndverk og moderne teknikk har han bygget Rebel til å bli en av Nord-Norges mest anerkjente barbersalonger.",
-    image: "/team/tommy.jpg",
+    image: "/team/tommy.png",
   },
   {
     name: "Stine Thoresen",
@@ -47,7 +47,7 @@ export default function OmPage() {
               <div className="absolute inset-0 bg-gradient-to-br from-surface to-deep" />
               {/* Uncomment when image ready:
               <Image
-                src="/team/tommy.jpg"
+                src="/team/tommy.png"
                 alt="Tommy Meistad"
                 fill
                 className="object-cover"
