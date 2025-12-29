@@ -14,18 +14,13 @@ export function Authority() {
       <div className="grid md:grid-cols-2 gap-12 items-center">
         {/* Image */}
         <div className="relative aspect-[4/5] rounded-[var(--radius-lg)] overflow-hidden">
-          {/* Placeholder until real image */}
-          <div className="absolute inset-0 bg-gradient-to-br from-surface to-deep" />
-
-          {/* Uncomment when image is ready:
           <Image
-            src="/team/tommy.jpg"
+            src="/team/tommy.png"
             alt="Tommy Meistad - Grunnlegger og Master Barber"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 50vw"
           />
-          */}
         </div>
 
         {/* Content */}
