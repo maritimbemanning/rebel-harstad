@@ -10,31 +10,25 @@ export const metadata: Metadata = {
 
 const BOOKING_URL = "https://timma.no/salong/Rebel";
 
-// Placeholder priser - erstatt med faktiske priser fra Timma
 const serviceCategories = [
   {
-    id: "harklipp",
-    title: "Hårklipp",
+    id: "herreklipp",
+    title: "Herreklipp",
     services: [
       {
-        name: "Herreklipp",
-        price: "450,-",
-        description: "Inkl. vask og styling",
+        name: "Herreklipp (30 min)",
+        price: "700,-",
+        description: "Enkel klipp/stuss av håret",
       },
       {
-        name: "Herreklipp + Skjegg",
-        price: "650,-",
-        description: "Komplett behandling",
+        name: "Herreklipp (45 min)",
+        price: "850,-",
+        description: "Ny frisyre/designklipp - eller mer enn bare en vanlig stuss",
       },
       {
-        name: "Student / Pensjonist",
-        price: "380,-",
-        description: "Med gyldig legitimasjon",
-      },
-      {
-        name: "Barn under 12 år",
-        price: "350,-",
-        description: "Inkl. styling",
+        name: "Fade kun på sider og bak",
+        price: "600,-",
+        description: "Kun fade, ikke klipp oppå. Fordel å stille med nyvasket hår",
       },
     ],
   },
@@ -43,40 +37,30 @@ const serviceCategories = [
     title: "Skjegg",
     services: [
       {
-        name: "Skjeggtrim",
-        price: "350,-",
-        description: "Forming og trimming",
+        name: "Skjegg (15 min)",
+        price: "550,-",
+        description: "Stuss av skjegg og forming av linjer med bruk av maskin",
       },
       {
-        name: "Skjegg med kniv",
-        price: "400,-",
-        description: "Tradisjonell barbering med varmt håndkle",
+        name: "Skjegg (30 min)",
+        price: "700,-",
+        description: "Forming av skjegg - kniv brukes på øvre linje",
       },
       {
-        name: "Skjegg styling",
-        price: "300,-",
-        description: "Kun styling og produkter",
+        name: "Skjegg (45 min)",
+        price: "950,-",
+        description: "Full skjeggforming med kniv og varme omslag",
       },
     ],
   },
   {
-    id: "behandlinger",
-    title: "Behandlinger",
+    id: "pakke",
+    title: "Pakker",
     services: [
       {
-        name: "Ansiktsbehandling",
-        price: "450,-",
-        description: "Rens, peeling og massekremer",
-      },
-      {
-        name: "Voksing øyebryn",
-        price: "150,-",
-        description: "Forming av øyebryn",
-      },
-      {
-        name: "Voksing nese/ører",
-        price: "100,-",
-        description: "Fjerning av uønsket hår",
+        name: "Herreklipp + Skjegg",
+        price: "Fra 1250,-",
+        description: "Kombiner herreklipp med skjeggtrimming",
       },
     ],
   },

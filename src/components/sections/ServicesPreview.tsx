@@ -3,24 +3,24 @@ import { Section, SectionHeader, Card, CardTitle } from "@/components/ui";
 
 const services = [
   {
-    title: "Hårklipp",
-    price: "Fra 450,-",
-    href: "/tjenester#harklipp",
+    title: "Herreklipp",
+    price: "Fra 700,-",
+    href: "/tjenester#herreklipp",
   },
   {
     title: "Skjegg",
-    price: "Fra 350,-",
+    price: "Fra 550,-",
     href: "/tjenester#skjegg",
   },
   {
-    title: "Hår + Skjegg",
-    price: "Fra 650,-",
-    href: "/tjenester#pakke",
+    title: "Fade",
+    price: "600,-",
+    href: "/tjenester#fade",
   },
   {
-    title: "Behandlinger",
-    price: "Fra 200,-",
-    href: "/tjenester#behandlinger",
+    title: "Full pakke",
+    price: "Fra 1250,-",
+    href: "/tjenester#pakke",
   },
 ];
 
