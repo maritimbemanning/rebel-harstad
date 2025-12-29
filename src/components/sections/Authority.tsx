@@ -15,7 +15,7 @@ export function Authority() {
         {/* Image */}
         <div className="relative aspect-[4/5] rounded-[var(--radius-lg)] overflow-hidden">
           <Image
-            src="/team/tommy.png"
+            src="/team/tommy.webp"
             alt="Tommy Meistad - Grunnlegger og Master Barber"
             fill
             className="object-cover"
