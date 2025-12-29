@@ -6,16 +6,16 @@ import { Section, SectionHeader, Button, Card } from "@/components/ui";
 export const metadata: Metadata = {
   title: "Om Rebel Barber",
   description:
-    "Møt Tommy Meistad og teamet bak Rebel Barber. Norgesmester, Nordisk mester, og 15+ års erfaring med tradisjonelt barberhåndverk.",
+    "Møt Tommy Meistad og teamet bak Rebel Barber. Flerfoldige NNM-gull, NM-finalist, og prisbelønt barber fra Harstad.",
 };
 
 const BOOKING_URL = "https://timma.no/salong/Rebel";
 
 const achievements = [
-  { icon: "🏆", title: "Norgesmester Barber", year: "2019" },
-  { icon: "🏆", title: "Nordisk mester", year: "2020" },
-  { icon: "🎓", title: "Sertifisert instruktør", year: "" },
-  { icon: "📍", title: "15+ års erfaring", year: "" },
+  { icon: "🥇", title: "NNM Gull", year: "2019, 2021, 2022, 2024" },
+  { icon: "🥇", title: "Trondheim Cup Gull", year: "2024, 2025" },
+  { icon: "🥇", title: "Bergen Cup", year: "2025" },
+  { icon: "🥈", title: "NM Finalist", year: "2021, 2024, 2025" },
 ];
 
 const team = [
