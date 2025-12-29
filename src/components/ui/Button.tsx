@@ -13,14 +13,14 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary: `
-    bg-gold text-deep
+    bg-gold text-[#0A0A0A]
     hover:bg-gold-light
     active:bg-gold-dark
   `,
   secondary: `
     bg-transparent text-gold
     border border-gold
-    hover:bg-gold hover:text-deep
+    hover:bg-gold hover:text-[#0A0A0A]
   `,
   ghost: `
     bg-transparent text-gold
