@@ -42,10 +42,8 @@ export default function OmPage() {
         {/* Hero */}
         <Section background="deep" className="py-16 md:py-24">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Image placeholder */}
+            {/* Tommy Image */}
             <div className="relative aspect-[4/5] rounded-[var(--radius-lg)] overflow-hidden order-2 md:order-1">
-              <div className="absolute inset-0 bg-gradient-to-br from-surface to-deep" />
-              {/* Uncomment when image ready:
               <Image
                 src="/team/tommy.png"
                 alt="Tommy Meistad"
@@ -53,7 +51,6 @@ export default function OmPage() {
                 className="object-cover"
                 priority
               />
-              */}
             </div>
 
             {/* Content */}
