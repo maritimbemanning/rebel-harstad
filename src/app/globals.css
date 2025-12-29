@@ -1,26 +1,149 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ============================================
+   REBEL BARBER HARSTAD - Design Tokens
+   Tailwind CSS 4 syntax
+   ============================================ */
+
+@theme {
+  /* ----------------------------------------
+     COLORS - Based on logo analysis
+     These create utilities like bg-background, text-gold, etc.
+     ---------------------------------------- */
+
+  /* Primary (dark base) */
+  --color-background: #1E1E1E;
+  --color-surface: #2B2B2B;
+  --color-deep: #141414;
+
+  /* Secondary (text) */
+  --color-heading: #E8E0D0;
+  --color-body: #A8A090;
+  --color-muted: #6B6660;
+
+  /* Accent (gold - from logo) */
+  --color-gold: #B8A67A;
+  --color-gold-light: #D4C494;
+  --color-gold-dark: #8B7A5A;
+
+  /* Functional */
+  --color-success: #4A7C59;
+  --color-error: #9B4D4D;
+
+  /* ----------------------------------------
+     FONTS
+     ---------------------------------------- */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-cormorant), ui-serif, Georgia, serif;
+
+  /* ----------------------------------------
+     SPACING
+     ---------------------------------------- */
+  --spacing-section: 6rem;
+  --spacing-section-sm: 4rem;
+
+  /* ----------------------------------------
+     RADII
+     ---------------------------------------- */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* ============================================
+   BASE STYLES
+   ============================================ */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-background text-body font-sans antialiased;
+  line-height: 1.625;
+}
+
+/* ============================================
+   TYPOGRAPHY BASE
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif text-heading font-semibold;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  @apply text-4xl md:text-5xl lg:text-6xl;
+}
+
+h2 {
+  @apply text-3xl md:text-4xl lg:text-5xl;
+}
+
+h3 {
+  @apply text-2xl md:text-3xl;
+  font-weight: 500;
+}
+
+h4 {
+  @apply text-xl md:text-2xl;
+  font-weight: 500;
+}
+
+/* ============================================
+   LINK STYLES
+   ============================================ */
+
+a {
+  @apply text-gold transition-colors duration-150;
+  text-decoration: none;
+}
+
+a:hover {
+  @apply text-gold-light;
+}
+
+/* ============================================
+   SELECTION
+   ============================================ */
+
+::selection {
+  @apply bg-gold text-deep;
+}
+
+/* ============================================
+   SCROLLBAR (subtle, dark theme)
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-deep;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-muted rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gold-dark;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.container {
+  @apply w-full max-w-7xl mx-auto px-4 md:px-6 lg:px-8;
+}
+
+.section {
+  @apply py-16 md:py-24;
 }
