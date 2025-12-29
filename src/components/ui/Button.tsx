@@ -69,14 +69,14 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         : {};
 
       return (
-        <a href={href} className={baseStyles} {...linkProps}>
+        <a href={href} className={baseStyles} style={{ color: variant === 'primary' ? '#0A0A0A' : undefined }} {...linkProps}>
           {children}
         </a>
       );
     }
 
     return (
-      <button ref={ref} className={baseStyles} {...props}>
+      <button ref={ref} className={baseStyles} style={{ color: variant === 'primary' ? '#0A0A0A' : undefined }} {...props}>
         {children}
       </button>
     );
