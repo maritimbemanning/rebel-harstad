@@ -3,9 +3,12 @@ import Link from "next/link";
 import { Section } from "@/components/ui";
 
 const achievements = [
-  { icon: "🏆", text: "Norgesmester Barber 2019" },
-  { icon: "🏆", text: "Nordisk mester 2020" },
-  { icon: "📍", text: "15+ års erfaring" },
+  { icon: "🥇", text: "NNM 2019, 2021, 2022, 2024 (6x gull)" },
+  { icon: "🥇", text: "Trondheim Cup 2024, 2025 (4x gull)" },
+  { icon: "🥇", text: "Bergen Cup 2025 (gull, sølv, bronse)" },
+  { icon: "🥇", text: "OK North-Norway 2020" },
+  { icon: "🥈", text: "NM finalist 2021, 2024, 2025" },
+  { icon: "🥈", text: "OK Norway 2020" },
 ];
 
 export function Authority() {
